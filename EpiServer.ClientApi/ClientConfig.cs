@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace EpiServer.ClientApi
 {
-	public interface IClientConfig
+	public class ClientConfig
 	{
-		string IntegrationUrl { get; }
-		string UserName { get; }
-		string Password { get; }
-		string TokenEndpoint { get; }
+		public string IntegrationUrl;
+		public string UserName;
+		public string Password;
 	}
 }

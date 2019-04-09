@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpiServer.ClientApi", "EpiServer.ClientApi\EpiServer.ClientApi.csproj", "{618DF87F-AF11-4CA1-AFAD-303AEEEE26BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPiServer.ClientApi.Test", "EPiServer.ClientApi.Test\EPiServer.ClientApi.Test.csproj", "{FD5A5753-9446-4EAA-BC56-ED5B0B29B066}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{618DF87F-AF11-4CA1-AFAD-303AEEEE26BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{618DF87F-AF11-4CA1-AFAD-303AEEEE26BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{618DF87F-AF11-4CA1-AFAD-303AEEEE26BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5A5753-9446-4EAA-BC56-ED5B0B29B066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5A5753-9446-4EAA-BC56-ED5B0B29B066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5A5753-9446-4EAA-BC56-ED5B0B29B066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5A5753-9446-4EAA-BC56-ED5B0B29B066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

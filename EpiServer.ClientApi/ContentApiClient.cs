@@ -11,8 +11,9 @@ namespace EpiServer.ClientApi
 {
 	public class ContentApiClient : BaseApiClient
 	{
-		public ContentApiClient(IClientConfig config) : base(config)
+		public ContentApiClient(ClientConfig config) : base(config)
 		{
+			_tokenEndpoint = "/api/EPiServer/auth/token";
 		}
 
 		public override string GetAccessToken()

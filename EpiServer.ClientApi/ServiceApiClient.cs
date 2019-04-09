@@ -13,8 +13,9 @@ namespace EpiServer.ClientApi
 {
 	public class ServiceApiClient : BaseApiClient
 	{
-		public ServiceApiClient(IClientConfig config) : base(config)
+		public ServiceApiClient(ClientConfig config) : base(config)
 		{
+			_tokenEndpoint = "/episerverapi/token";
 		}
 
 		public Entry GetEntry(string requestUri)

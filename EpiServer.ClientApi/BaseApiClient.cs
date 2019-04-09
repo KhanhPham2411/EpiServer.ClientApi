@@ -11,9 +11,10 @@ namespace EpiServer.ClientApi
 {
     public abstract class BaseApiClient
     {
-		protected IClientConfig _config;
+		protected ClientConfig _config;
+		protected string _tokenEndpoint;
 		protected HttpClient _client;
-		public BaseApiClient(IClientConfig config)
+		public BaseApiClient(ClientConfig config)
 		{
 			_config = config;
 		}
