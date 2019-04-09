@@ -31,7 +31,7 @@ namespace EpiServer.ClientApi
 					{ "client_id", "Default" }
 				};
 
-				var response = client.PostAsync(_config.TokenEndpoint, new FormUrlEncodedContent(fields)).Result;
+				var response = client.PostAsync(_tokenEndpoint, new FormUrlEncodedContent(fields)).Result;
 
 				if (response.StatusCode == HttpStatusCode.OK)
 				{

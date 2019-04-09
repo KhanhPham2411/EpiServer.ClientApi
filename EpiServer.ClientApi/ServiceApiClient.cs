@@ -45,7 +45,7 @@ namespace EpiServer.ClientApi
 				{ "username", _config.UserName },
 				{ "password", _config.Password }
 			};
-				var response = client.PostAsync(_config.TokenEndpoint, new FormUrlEncodedContent(fields)).Result;
+				var response = client.PostAsync(_tokenEndpoint, new FormUrlEncodedContent(fields)).Result;
 				if (response.StatusCode == HttpStatusCode.OK)
 				{
 					var content = response.Content.ReadAsStringAsync().Result;
