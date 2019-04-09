@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace EPiServer.ClientApi.Test.SiteConfig
 {
-	public class QuickSilverSiteClientConfig : ClientConfig
+	public class QuickSilverB2BSiteClientConfig : ClientConfig
 	{
-		public QuickSilverSiteClientConfig()
+		public QuickSilverB2BSiteClientConfig()
 		{
 			IntegrationUrl = "http://localhost:50211";
-			UserName = "admin@example.com";
+			UserName = "admin@episerver.com";
 			Password = "store";
 		}
 	}
