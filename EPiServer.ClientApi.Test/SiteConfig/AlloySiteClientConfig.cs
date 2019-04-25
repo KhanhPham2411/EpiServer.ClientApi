@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace EPiServer.ClientApi.Test.SiteConfig
 {
-	public class AlloySiteSiteContext : SiteContext
+	public class AlloySiteContext : SiteContext
 	{
-		public AlloySiteSiteContext()
+		public AlloySiteContext()
 		{
 			IntegrationUrl = "http://localhost:51481/";
 			UserName = "epiadmin";
