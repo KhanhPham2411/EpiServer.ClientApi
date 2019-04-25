@@ -14,7 +14,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi
 		[Test]
 		public void TestGetAccessToken()
 		{
-			ServiceApiClient client = new ServiceApiClient(new QuickSilverB2BSiteClientConfig());
+			ServiceApiClient client = new ServiceApiClient(new QuickSilverB2BSiteContext());
 			var token = client.GetAccessToken();
 		}
 	}

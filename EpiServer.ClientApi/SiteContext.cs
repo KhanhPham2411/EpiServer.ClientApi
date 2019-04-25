@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EpiServer.ClientApi
 {
-	public class ClientConfig
+	public class SiteContext
 	{
 		public string IntegrationUrl;
 		public string UserName;

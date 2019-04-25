@@ -11,7 +11,7 @@ namespace EpiServer.ClientApi
 {
 	public class ContentApiClient : BaseApiClient
 	{
-		public ContentApiClient(ClientConfig config) : base(config)
+		public ContentApiClient(SiteContext context) : base(context)
 		{
 			_tokenEndpoint = "/api/EPiServer/auth/token";
 		}
@@ -21,13 +21,13 @@ namespace EpiServer.ClientApi
 			string token = "";
 			using (var client = new HttpClient())
 			{
-				client.BaseAddress = new Uri(_config.IntegrationUrl);
+				client.BaseAddress = new Uri(_context.IntegrationUrl);
 
 				var fields = new Dictionary<string, string>
 				{
 					{ "grant_type", "password" },
-					{ "username", _config.UserName },
-					{ "password", _config.Password },
+					{ "username", _context.UserName },
+					{ "password", _context.Password },
 					{ "client_id", "Default" }
 				};
 

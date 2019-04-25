@@ -13,7 +13,7 @@ namespace EpiServer.ClientApi
 {
 	public class ServiceApiClient : BaseApiClient
 	{
-		public ServiceApiClient(ClientConfig config) : base(config)
+		public ServiceApiClient(SiteContext context) : base(context)
 		{
 			_tokenEndpoint = "/episerverapi/token";
 		}
@@ -37,14 +37,15 @@ namespace EpiServer.ClientApi
 			string token = "";
 			using (var client = new HttpClient())
 			{
-				client.BaseAddress = new Uri(_config.IntegrationUrl);
+				client.BaseAddress = new Uri(_context.IntegrationUrl);
 
 				var fields = new Dictionary<string, string>
-			{
-				{ "grant_type", "password" },
-				{ "username", _config.UserName },
-				{ "password", _config.Password }
-			};
+				{
+					{ "grant_type", "password" },
+					{ "username", _context.UserName },
+					{ "password", _context.Password }
+				};
+
 				var response = client.PostAsync(_tokenEndpoint, new FormUrlEncodedContent(fields)).Result;
 				if (response.StatusCode == HttpStatusCode.OK)
 				{

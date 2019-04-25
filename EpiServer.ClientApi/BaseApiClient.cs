@@ -11,12 +11,12 @@ namespace EpiServer.ClientApi
 {
     public abstract class BaseApiClient
     {
-		protected ClientConfig _config;
+		protected SiteContext _context;
 		protected string _tokenEndpoint;
 		protected HttpClient _client;
-		public BaseApiClient(ClientConfig config)
+		public BaseApiClient(SiteContext context)
 		{
-			_config = config;
+			_context = context;
 		}
 
 		protected HttpClient Client
@@ -36,7 +36,7 @@ namespace EpiServer.ClientApi
 			string token = GetAccessToken();
 
 			_client = new HttpClient();
-			_client.BaseAddress = new Uri(_config.IntegrationUrl);
+			_client.BaseAddress = new Uri(_context.IntegrationUrl);
 			_client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 		}
 		public abstract string GetAccessToken();

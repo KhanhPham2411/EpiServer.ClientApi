@@ -14,7 +14,7 @@ namespace EPiServer.ClientApi.Test.ContentApi
 		[Test]
 		public void TestGetAccessToken()
 		{
-			ContentApiClient client = new ContentApiClient(new AlloySiteClientConfig());
+			ContentApiClient client = new ContentApiClient(new AlloySiteSiteContext());
 			var token = client.GetAccessToken();
 		}
 	}
