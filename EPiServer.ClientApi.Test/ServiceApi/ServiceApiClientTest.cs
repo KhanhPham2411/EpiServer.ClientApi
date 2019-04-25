@@ -11,11 +11,17 @@ namespace EPiServer.ClientApi.Test.ServiceApi
 {
 	public class ServiceApiClientTest : BaseTest
 	{
+		protected ServiceApiClient _client;
+		public ServiceApiClientTest()
+		{
+			_client = new ServiceApiClient(new QuickSilverB2BSiteContext());
+		}
+
 		[Test]
 		public void TestGetAccessToken()
 		{
-			ServiceApiClient client = new ServiceApiClient(new QuickSilverB2BSiteContext());
-			var token = client.GetAccessToken();
+			var token = _client.GetAccessToken();
+			Assert.IsFalse(String.IsNullOrEmpty(token));
 		}
 	}
 }
