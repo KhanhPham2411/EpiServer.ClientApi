@@ -263,6 +263,7 @@
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
     <Compile Include="ContentApi\ContentApiClientTest.cs" />
+    <Compile Include="ContentApi\Controllers\ContentApiSearchControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceApi\Controllers\NodeControllerTest.cs" />
     <Compile Include="ServiceApi\ServiceApiClientTest.cs" />

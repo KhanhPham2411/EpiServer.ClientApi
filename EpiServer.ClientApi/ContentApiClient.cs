@@ -13,7 +13,7 @@ namespace EpiServer.ClientApi
 	{
 		public ContentApiClient(SiteContext context) : base(context)
 		{
-			_tokenEndpoint = "/api/EPiServer/auth/token";
+			_tokenEndpoint = "/api/episerver/auth/token";
 		}
 
 		public override string GetAccessToken()
