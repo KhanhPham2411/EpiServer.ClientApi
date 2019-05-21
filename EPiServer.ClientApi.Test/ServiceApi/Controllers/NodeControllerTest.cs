@@ -12,7 +12,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		[Test]
 		public void Get_ReturnCorrectSortOrder()
 		{
-			var node = _client.Get("episerverapi/commerce/nodes/mens");
+			var data = _client.Get("episerverapi/commerce/nodes/mens/");
 		}
 	}
 }

@@ -41,25 +41,29 @@ namespace EpiServer.ClientApi
 		}
 		public abstract string GetAccessToken();
 
-		public string Get(string requestUri)
+		public ResponseData Get(string requestUri)
 		{
-			var result = Client.GetAsync(requestUri).Result.Content.ReadAsStringAsync().Result;
-			return result;
+			var result = Client.GetAsync(requestUri).Result;
+
+			return new ResponseData(result);
 		}
-		public string Put(string requestUri, string content)
+		public ResponseData Put(string requestUri, string content)
 		{
-			var result = Client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/json")).Result.Content.ReadAsStringAsync().Result;
-			return result;
+			var result = Client.PutAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/json")).Result;
+
+			return new ResponseData(result);
 		}
-		public string Post(string requestUri, string content)
+		public ResponseData Post(string requestUri, string content)
 		{
-			var result = Client.PostAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/json")).Result.Content.ReadAsStringAsync().Result;
-			return result;
+			var result = Client.PostAsync(requestUri, new StringContent(content, Encoding.UTF8, "application/json")).Result;
+
+			return new ResponseData(result);
 		}
-		public string Delete(string requestUri, string content)
+		public ResponseData Delete(string requestUri, string content)
 		{
-			var result = Client.DeleteAsync(requestUri).Result.Content.ReadAsStringAsync().Result;
-			return result;
+			var result = Client.DeleteAsync(requestUri).Result;
+
+			return new ResponseData(result);
 		}
 	}
 }

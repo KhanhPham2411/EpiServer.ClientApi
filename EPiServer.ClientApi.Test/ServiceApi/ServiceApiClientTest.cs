@@ -14,7 +14,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi
 		protected ServiceApiClient _client;
 		public ServiceApiClientTest()
 		{
-			_client = new ServiceApiClient(new QuickSilverB2BSiteContext());
+			_client = new ServiceApiClient(new QuickSilverSiteContext());
 		}
 
 		[Test]

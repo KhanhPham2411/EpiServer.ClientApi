@@ -20,14 +20,14 @@ namespace EpiServer.ClientApi
 
 		public Entry GetEntry(string requestUri)
 		{
-			var result = Get(requestUri);
+			var result = Get(requestUri).ContentString;
 			return JsonConvert.DeserializeObject<Entry>(result);
 		}
-		public string PutEntry(string requestUri, Entry entry)
+		public ResponseData PutEntry(string requestUri, Entry entry)
 		{
 			return Put(requestUri, JsonConvert.SerializeObject(entry));
 		}
-		public string PostEntry(string requestUri, Entry entry)
+		public ResponseData PostEntry(string requestUri, Entry entry)
 		{
 			return Post(requestUri, JsonConvert.SerializeObject(entry));
 		}
