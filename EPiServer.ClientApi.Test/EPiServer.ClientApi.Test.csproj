@@ -263,6 +263,7 @@
   <ItemGroup>
     <Compile Include="BaseTest.cs" />
     <Compile Include="ContentApi\ContentApiClientTest.cs" />
+    <Compile Include="ContentApi\Controllers\ContentApiControllerTest.cs" />
     <Compile Include="ContentApi\Controllers\ContentApiSearchControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceApi\Controllers\EntryControllerTest.cs" />
@@ -274,6 +275,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
