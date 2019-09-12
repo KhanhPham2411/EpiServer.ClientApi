@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using EpiServer.ClientApi;
+using Newtonsoft.Json;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,16 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 	public class EntryControllerTest : ServiceApiClientTest
 	{
 		private string _routeEntry = "episerverapi/commerce/entries";
+
+		public EntryControllerTest()
+		{
+			_client = new ServiceApiClient(new SiteContext()
+			{
+				IntegrationUrl = "http://localhost:54211/",
+				UserName = "admin@episerver.com",
+				Password = "store"
+			});
+		}
 
 		[Test]
 		public void Put_Return204()
@@ -42,6 +53,13 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		public string getRouteEntryCode(string code)
 		{
 			return _routeEntry + "/" + code;
+		}
+
+		[Test]
+		public void Post_WithData()
+		{
+			var json = File.ReadAllText(GetAbsolutePath("data.json"));
+			var result1 = _client.Post(_routeEntry, json);
 		}
 	}
 }

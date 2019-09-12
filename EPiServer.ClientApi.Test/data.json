@@ -1,1 +1,89 @@
-﻿
+﻿{
+  "Code": "tq33246-2-XXL",
+  "Name": "Tien Quach 33245-1 XXL - handtowel",
+  "StartDate": "2019-08-26T06:26:10.668662Z",
+  "EndDate": "2119-08-26T06:26:10.6746456Z",
+  "IsActive": false,
+  "MetaClass": "GenericVariation",
+  "Catalog": "QuicksilverB2B",
+  "MetaFields": [
+    {
+      "Name": "BarCode",
+      "Type": "LongString",
+      "Data": [
+							{
+								"Language": "en-au",
+								"Value": "33246-1-XXL"
+							},
+        {
+          "Language": "en-nz",
+          "Value": "33246-1-XXL"
+        }
+      ]
+    },
+    {
+      "Name": "BulkyCategory",
+      "Type": "LongString",
+      "Data": [
+        {
+          "Language": "en-au",
+          "Value": "FALSE"
+        },
+        {
+          "Language": "en-nz",
+          "Value": "FALSE"
+        }
+      ]
+    },
+    {
+      "Name": "DisplayName",
+      "Type": "ShortString",
+      "Data": [
+        {
+          "Language": "en-au",
+          "Value": "Tien Quach 33246-1 XXL"
+        },
+        {
+          "Language": "en-nz",
+          "Value": "Tien Quach 33246-1 XXL"
+        }
+      ]
+    },
+    {
+      "Name": "Size",
+      "Type": "LongString",
+      "Data": [
+        {
+          "Language": "en-au",
+          "Value": "TEST"
+        },
+        {
+          "Language": "en-nz",
+          "Value": "TEST"
+        }
+      ]
+    },
+    {
+      "Name": "ShippingMethod",
+      "Type": "LongString",
+      "Data": [
+        {
+          "Language": "en-au",
+          "Value": "post"
+        },
+        {
+          "Language": "en-nz",
+          "Value": "post"
+        }
+      ]
+    }
+  ],
+  "EntryType": "Variation",
+  "InventoryStatus": "Enabled",
+  "Variation": {
+    "MinQuantity": 1.0,
+    "MaxQuantity": 10.0,
+    "Weight": 0,
+    "TaxCategory": null
+  }
+}
