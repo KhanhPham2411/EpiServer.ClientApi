@@ -16,11 +16,19 @@ namespace EPiServer.ClientApi.Test.ContentApi.Controllers
 
 
 		[Test]
-		public void Search_ShouldReturn200()
+		public void GetProduct_ShouldReturn200()
 		{
-			ContentApiClient client = new ContentApiClient(new AlloySiteContext());
+			ContentApiClient client = new ContentApiClient(new QuickSilverB2BSiteContext());
 
-			var result = client.Get(RoutePrefix + "/311");
+			var result = client.Get(RoutePrefix + "/d77217f2-2b64-44aa-a5e6-6ff1d9b5e518");
+		}
+
+		[Test]
+		public void GetPage_ShouldReturn200()
+		{
+			ContentApiClient client = new ContentApiClient(new QuickSilverB2BSiteContext());
+
+			var result = client.Get(RoutePrefix + "/1989");
 		}
 	}
 }

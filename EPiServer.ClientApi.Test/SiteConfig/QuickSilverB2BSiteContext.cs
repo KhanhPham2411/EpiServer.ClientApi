@@ -11,7 +11,7 @@ namespace EPiServer.ClientApi.Test.SiteConfig
 	{
 		public QuickSilverB2BSiteContext()
 		{
-			IntegrationUrl = "http://localhost:54211";
+			IntegrationUrl = "http://localhost:56211";
 			UserName = "admin@episerver.com";
 			Password = "store";
 		}

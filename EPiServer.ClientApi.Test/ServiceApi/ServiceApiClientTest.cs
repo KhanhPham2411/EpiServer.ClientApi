@@ -14,15 +14,15 @@ namespace EPiServer.ClientApi.Test.ServiceApi
 		protected ServiceApiClient _client;
 		public ServiceApiClientTest()
 		{
-			_client = new ServiceApiClient(new QuickSilverB2BSiteContext());
+			//_client = new ServiceApiClient(new QuickSilverB2BSiteContext());
 
-			//_client = new ServiceApiClient(new SiteContext()
-			//{
-			//	IntegrationUrl = "https://stage.kvc.com.my/",
-			//	UserName = "admin@episerver.com",
-			//	Password = "23p1cDssc!"
-			//});
-		}
+            _client = new ServiceApiClient(new SiteContext()
+            {
+                IntegrationUrl = "https://kvc.com.my/",
+                UserName = "admin@episerver.com",
+                Password = "23p1cDssc!"
+            });
+        }
 
 		[Test]
 		public void TestGetAccessToken()
