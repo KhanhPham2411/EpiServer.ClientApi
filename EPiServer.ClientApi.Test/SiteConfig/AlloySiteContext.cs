@@ -11,7 +11,7 @@ namespace EPiServer.ClientApi.Test.SiteConfig
 	{
 		public AlloySiteContext()
 		{
-			IntegrationUrl = "http://localhost:51481/";
+			IntegrationUrl = "http://localhost:54481/";
 			UserName = "epiadmin";
 			Password = "3p!Pass";
 		}
