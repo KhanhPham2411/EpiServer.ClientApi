@@ -1,0 +1,158 @@
+﻿{
+  "BillingCurrency": "USD",
+  "MarketId": "DEFAULT",
+  "Name": "MigratedPurchaseOrder",
+  "OrderForms": [
+    {
+      "Shipments": [
+        {
+          "Discounts": [],
+          "ShipmentId": 0,
+          "ShippingMethodId": "00cca7ce-1ba6-4ee2-a52b-ca3c2a1c1d8e",
+          "ShippingMethodName": null,
+          "ShippingTax": 139.1200,
+          "ShippingAddressId": null,
+          "ShipmentTrackingNumber": null,
+          "ShippingDiscountAmount": 0,
+          "ShippingSubTotal": 0,
+          "ShippingTotal": 0,
+          "Status": "Shipped",
+          "PrevStatus": null,
+          "PickListId": null,
+          "SubTotal": 0,
+          "WarehouseCode": null,
+          "LineItems": [
+            {
+              "LineItemId": 1,
+              "Code": "NoEpiserverCode_Migration",
+              "DisplayName": "Alcoholic Drinks in Morocco",
+              "PlacedPrice": 2100.0000,
+              "ExtendedPrice": 2100.0000,
+              "DiscountedPrice": 0,
+              "Quantity": 1,
+              "ReturnQuantity": 0,
+              "InventoryTrackingStatus": "Disabled",
+              "IsInventoryAllocated": true,
+              "IsGift": false
+            }
+          ],
+          "Properties": []
+        },
+        {
+          "Discounts": [],
+          "ShipmentId": 0,
+          "ShippingMethodId": "00cca7ce-1ba6-4ee2-a52b-ca3c2a1c1d8e",
+          "ShippingMethodName": null,
+          "ShippingTax": 139.1200,
+          "ShippingAddressId": null,
+          "ShipmentTrackingNumber": null,
+          "ShippingDiscountAmount": 0,
+          "ShippingSubTotal": 0,
+          "ShippingTotal": 0,
+          "Status": "Shipped",
+          "PrevStatus": null,
+          "PickListId": null,
+          "SubTotal": 0,
+          "WarehouseCode": null,
+          "LineItems": [
+            {
+              "LineItemId": 1,
+              "Code": "NoEpiserverCode_Migration",
+              "DisplayName": "Alcoholic Drinks in Morocco",
+              "PlacedPrice": 2100.0000,
+              "ExtendedPrice": 2100.0000,
+              "DiscountedPrice": 0,
+              "Quantity": 1,
+              "ReturnQuantity": 0,
+              "InventoryTrackingStatus": "Disabled",
+              "IsInventoryAllocated": true,
+              "IsGift": false
+            }
+          ],
+          "Properties": []
+        }
+      ],
+      "LineItems": [],
+      "Discounts": [],
+      "ReturnComment": null,
+      "ReturnType": null,
+      "ReturnAuthCode": null,
+      "OrderFormId": 0,
+      "Name": null,
+      "BillingAddressId": null,
+      "ShippingTotal": 0,
+      "HandlingTotal": 0,
+      "TaxTotal": 139.1200,
+      "DiscountAmount": 0,
+      "SubTotal": 0,
+      "Total": 0,
+      "Status": null,
+      "RmaNumber": null,
+      "AuthorizedPaymentTotal": 0,
+      "CapturedPaymentTotal": 0,
+      "Properties": []
+    }
+  ],
+  "ShippingTotal": 0,
+  "Status": "InProgress",
+  "SubTotal": 2100.0000,
+  "TaxTotal": 139.1200,
+  "Total": 2239.1200,
+  "Modified": "0001-01-01T00:00:00Z",
+  "Created": "2020-11-06T04:05:00Z",
+  "Properties": [
+    {
+      "Key": "Datacash.CardType",
+      "Value": null
+    },
+    {
+      "Key": "Datacash.Reason",
+      "Value": null
+    },
+    {
+      "Key": "Datacash.SettlementDate",
+      "Value": null
+    },
+    {
+      "Key": "Datacash.UniqueRef",
+      "Value": null
+    },
+    {
+      "Key": "Sage.OrderNumber",
+      "Value": null
+    },
+    {
+      "Key": "Sage.DateAdded",
+      "Value": null
+    },
+    {
+      "Key": "Sage.Customer",
+      "Value": null
+    },
+    {
+      "Key": "CustomerReferenceNumber",
+      "Value": "TestPayByInvoice123"
+    },
+    {
+      "Key": "VatNumber",
+      "Value": null
+    },
+    {
+      "Key": "ExpirationDate",
+      "Value": "2020/11/06 06:05:00"
+    }
+  ],
+  "AddressId": null,
+  "AffiliateId": "00000000-0000-0000-0000-000000000000",
+  "CustomerId": "bff7dff8-b3a5-41a0-b040-4ad81149662d",
+  "CustomerName": " ",
+  "HandlingTotal": 0,
+  "InstanceId": "00000000-0000-0000-0000-000000000000",
+  "OrderAddresses": [],
+  "OrderNumber": "44768",
+  "OrderGroupId": 0,
+  "OrderNotes": [],
+  "Owner": null,
+  "OwnerOrg": null,
+  "ProviderId": null
+}

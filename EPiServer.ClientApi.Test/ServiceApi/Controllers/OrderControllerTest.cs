@@ -39,7 +39,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		[Test]
 		public void Post_WithData()
 		{
-			var json = File.ReadAllText(GetAbsolutePath("data.json"));
+			var json = File.ReadAllText(GetAbsolutePath("order.json"));
 			var result1 = _client.Post(_routeEntry, json);
 		}
 	}
