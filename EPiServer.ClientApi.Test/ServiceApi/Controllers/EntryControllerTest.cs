@@ -18,8 +18,8 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		{
 			_client = new ServiceApiClient(new SiteContext()
 			{
-				IntegrationUrl = "http://localhost:54211/",
-				UserName = "admin@episerver.com",
+				IntegrationUrl = "http://localhost:52344/",
+				UserName = "admin@example.com",
 				Password = "store"
 			});
 		}
@@ -27,7 +27,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		[Test]
 		public void Put_Return204()
 		{
-			var entry = _client.GetEntry(getRouteEntryCode("P-39813617"));
+			var entry = _client.GetEntry(getRouteEntryCode("SKU-36127195"));
 
 			// PUT IsActive=true,PublishStatuses= TRUE; RESULT: SUCCESS
 			entry.SeoInformation[1].Title = "Title LV 2";
@@ -61,5 +61,18 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 			var json = File.ReadAllText(GetAbsolutePath("data.json"));
 			var result1 = _client.Post(_routeEntry, json);
 		}
+
+		[Test]
+		public void Duplicate()
+		{
+			var entry = _client.GetEntry(getRouteEntryCode("SKU-36127195"));
+			// 10.000 items take 21 min
+			for (int i = 3; i < 9999; i++)
+			{
+				var jsonEntry = JsonConvert.SerializeObject(entry).Replace(entry.Code, $"{entry.Code}_{i}");
+				var result = _client.Post(_routeEntry, jsonEntry);
+			}
+		}
+
 	}
 }
