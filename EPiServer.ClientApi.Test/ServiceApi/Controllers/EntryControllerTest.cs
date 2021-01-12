@@ -65,11 +65,13 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		[Test]
 		public void Duplicate()
 		{
-			var entry = _client.GetEntry(getRouteEntryCode("SKU-36127195"));
+			var code = "SKU-36127195";
+			var entry = _client.Get(getRouteEntryCode(code)).ContentString;
+			var index = 5;
 			// 10.000 items take 21 min
-			for (int i = 3; i < 9999; i++)
+			for (int i = index; i < index + 1; i++)
 			{
-				var jsonEntry = JsonConvert.SerializeObject(entry).Replace(entry.Code, $"{entry.Code}_{i}");
+				var jsonEntry = entry.Replace(code, $"{code}_{i}");
 				var result = _client.Post(_routeEntry, jsonEntry);
 			}
 		}
