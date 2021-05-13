@@ -1,0 +1,150 @@
+{
+  "IsActive": true,
+  "MetaFields": [
+    {
+      "Data": [
+        {
+          "Language": "en",
+          "Value": "Mens"
+        }
+      ],
+      "Name": "DisplayName",
+      "Type": "ShortString"
+    }
+  ],
+  "SeoInformation": [
+    {
+      "LanguageCode": "en",
+      "Title": null,
+      "Uri": "Mens-en.aspx",
+      "UriSegment": "mens",
+      "Description": null,
+      "Keywords": null
+    }
+  ],
+  "PublishStatuses": [
+    {
+      "Language": "en",
+      "IsPublished": true,
+      "StartPublish": "2015-04-22T11:39:20Z",
+      "StopPublish": "2035-04-21T22:00:00Z"
+    }
+  ],
+  "Code": "mens",
+  "ParentNodeCode": null,
+  "Name": "Mens",
+  "StartDate": "2015-04-22T11:39:20Z",
+  "EndDate": "2035-04-21T22:00:00Z",
+  "MetaClass": "FashionNode",
+  "Catalog": "Fashion",
+  "SortOrder": 0,
+  "ParentNode": null,
+  "Assets": [],
+  "Children": [
+    {
+      "Title": "Womens Dresses",
+      "Type": "CatalogNode",
+      "Href": "/episerverapi/commerce/nodes/dresses",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "dresses"
+        }
+      ]
+    },
+    {
+      "Title": "Mens Shoes",
+      "Type": "CatalogNode",
+      "Href": "/episerverapi/commerce/nodes/shoes",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "shoes"
+        }
+      ]
+    },
+    {
+      "Title": "Mens Jackets",
+      "Type": "CatalogNode",
+      "Href": "/episerverapi/commerce/nodes/jackets",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "jackets"
+        }
+      ]
+    },
+    {
+      "Title": "Mens Shirts",
+      "Type": "CatalogNode",
+      "Href": "/episerverapi/commerce/nodes/shirts",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "shirts"
+        }
+      ]
+    },
+    {
+      "Title": "Mens Sweatshirts",
+      "Type": "CatalogNode",
+      "Href": "/episerverapi/commerce/nodes/sweatshirts",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "sweatshirts"
+        }
+      ]
+    }
+  ],
+  "Entries": [
+    {
+      "Title": "Mens Fashionable Bundle",
+      "Type": "CatalogEntry",
+      "Href": "/episerverapi/commerce/entries/Mens-Fashionable-Bundle_1",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "Mens-Fashionable-Bundle_1"
+        },
+        {
+          "Name": "Image",
+          "Value": "http://localhost:55244/globalassets/catalog/mens_shirt_bundle.png/thumbnail"
+        }
+      ]
+    },
+    {
+      "Title": "Test",
+      "Type": "CatalogEntry",
+      "Href": "/episerverapi/commerce/entries/Test",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "Test"
+        }
+      ]
+    },
+    {
+      "Title": "Test",
+      "Type": "CatalogEntry",
+      "Href": "/episerverapi/commerce/entries/Test_2",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "Test_2"
+        }
+      ]
+    },
+    {
+      "Title": "Test",
+      "Type": "CatalogEntry",
+      "Href": "/episerverapi/commerce/entries/Test_3",
+      "Properties": [
+        {
+          "Name": "Code",
+          "Value": "Test_3"
+        }
+      ]
+    }
+  ]
+}

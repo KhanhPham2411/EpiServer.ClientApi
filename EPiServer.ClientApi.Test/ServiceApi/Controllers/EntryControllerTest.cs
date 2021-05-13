@@ -76,5 +76,11 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 			}
 		}
 
+
+		[Test]
+		public void Get()
+		{
+			var data = _client.Get(getRouteEntryCode("P-36127195"));
+		}
 	}
 }
