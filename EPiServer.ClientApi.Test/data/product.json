@@ -1,0 +1,64 @@
+﻿{
+  "IsActive": true,
+  "MetaFields": [
+    {
+      "Data": [
+        {
+          "Language": "en",
+          "Value": "New Item2"
+        }
+      ],
+      "Name": "DisplayName",
+      "Type": "ShortString"
+    },
+    {
+      "Data": [],
+      "Name": "_ExcludedCatalogEntryMarkets",
+      "Type": "EnumMultiValue"
+    },
+    {
+      "Name": "EPiBlock_HeaderBlock_Title",
+      "Type": "LongString",
+      "Data": [
+        {
+          "Language": "nl",
+          "Value": "Test Product NL"
+        }
+      ]
+    }
+  ],
+  "SeoInformation": [
+    {
+      "LanguageCode": "en",
+      "Title": null,
+      "Uri": "New-Item2-en.aspx",
+      "UriSegment": "new-item2",
+      "Description": null,
+      "Keywords": null
+    }
+  ],
+  "PublishStatuses": [
+    {
+      "Language": "en",
+      "IsPublished": true,
+      "StartPublish": "2021-05-10T10:31:48.883Z",
+      "StopPublish": "2031-05-10T10:31:48.883Z"
+    }
+  ],
+  "Code": "product_block",
+  "Name": "New Item2",
+  "StartDate": "2021-05-10T10:31:48.883Z",
+  "EndDate": "2031-05-10T10:31:48.883Z",
+  "MetaClass": "Default_Product",
+  "Catalog": "Fashion",
+  "Prices": [],
+  "EntryType": "Product",
+  "ChildCatalogEntries": [],
+  "InventoryStatus": null,
+  "WarehouseInventories": [],
+  "Associations": [],
+  "Assets": [],
+  "Nodes": [],
+  "Variation": null,
+  "Dimension": null
+}

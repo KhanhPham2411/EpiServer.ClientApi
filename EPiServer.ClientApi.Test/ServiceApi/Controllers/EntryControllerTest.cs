@@ -18,7 +18,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		{
 			_client = new ServiceApiClient(new SiteContext()
 			{
-				IntegrationUrl = "http://localhost:52344/",
+				IntegrationUrl = "http://localhost:57244/",
 				UserName = "admin@example.com",
 				Password = "store"
 			});
@@ -58,7 +58,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		[Test]
 		public void Post_WithData()
 		{
-			var json = File.ReadAllText(GetAbsolutePath("data.json"));
+			var json = File.ReadAllText(GetAbsolutePath("data/product.json"));
 			var result1 = _client.Post(_routeEntry, json);
 		}
 
