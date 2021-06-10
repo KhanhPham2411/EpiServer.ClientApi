@@ -14,7 +14,7 @@ namespace EPiServer.ClientApi.Test.ContentApi
 		[Test]
 		public void TestGetAccessToken()
 		{
-			ContentApiClient client = new ContentApiClient(new QuickSilverB2BSiteContext());
+			ContentApiClient client = new ContentApiClient(new AlloySiteContext());
 			var token = client.GetAccessToken();
 		}
 	}

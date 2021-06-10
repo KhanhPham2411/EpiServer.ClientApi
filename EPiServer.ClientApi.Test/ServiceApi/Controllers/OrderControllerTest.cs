@@ -19,7 +19,7 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		{
 			_client = new ServiceApiClient(new SiteContext()
 			{
-				IntegrationUrl = "http://localhost:52344/",
+				IntegrationUrl = "http://localhost:57244/",
 				UserName = "admin@example.com",
 				Password = "store"
 			});
@@ -28,12 +28,12 @@ namespace EPiServer.ClientApi.Test.ServiceApi.Controllers
 		[Test]
 		public void Put_Return204()
 		{
-			var data = _client.Get(_routeEntry + "/1014");
+			var data = _client.Get(_routeEntry + "/998");
 			var order = JsonConvert.DeserializeObject<PurchaseOrderModel>(data.ContentString);
-			order.TaxTotal = 55;
+			//order.TaxTotal = 55;
 
 			var data_put = JsonConvert.SerializeObject(order);
-			_client.Put(_routeEntry + "/1014", data_put);
+			_client.Put(_routeEntry + "/998", data_put);
 		}
 
 		[Test]

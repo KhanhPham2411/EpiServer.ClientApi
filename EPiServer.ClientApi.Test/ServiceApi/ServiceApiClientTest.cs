@@ -18,9 +18,9 @@ namespace EPiServer.ClientApi.Test.ServiceApi
 
             _client = new ServiceApiClient(new SiteContext()
             {
-                IntegrationUrl = "https://kvc.com.my/",
-                UserName = "admin@episerver.com",
-                Password = "23p1cDssc!"
+                IntegrationUrl = "http://localhost:57244/",
+                UserName = "admin@example.com",
+                Password = "store"
             });
         }
 
